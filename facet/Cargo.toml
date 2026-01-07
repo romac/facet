@@ -43,6 +43,7 @@ all-impls = [
     "smartstring",
     "smol_str",
     "rust_decimal",
+    "dashu-int",
 ] # Enable all optional Facet trait implementations for third-party types
 alloc = ["facet-core/alloc"] # Enable allocation support for no_std environments
 nonzero = ["facet-core/nonzero"] # Provide Facet trait implementations for NonZero<T> types
@@ -92,6 +93,9 @@ smol_str = [
 rust_decimal = [
     "facet-core/rust_decimal",
 ] # Provide Facet trait implementations for rust_decimal::Decimal
+dashu-int = [
+    "facet-core/dashu-int",
+] # Provide Facet trait implementations for dashu_int::IBig and dashu_int::UBig
 
 # Provide Facet trait implementations for tuples up to size 12. Without it,
 # Facet is only implemented for tuples up to size 4.

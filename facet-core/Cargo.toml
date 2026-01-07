@@ -61,6 +61,8 @@ ruint = ["alloc", "dep:ruint", "ruint?/alloc"]
 indexmap = ["alloc", "dep:indexmap"]
 # Provide Facet trait implementations for rust_decimal::Decimal
 rust_decimal = ["alloc", "dep:rust_decimal"]
+# Provide Facet trait implementations for dashu_int::IBig and dashu_int::UBig
+dashu-int = ["alloc", "dep:dashu-int"]
 
 # Provide Facet trait implementations for tuples up to size 12. Without it,
 # Facet is only implemented for tuples up to size 4.
@@ -95,6 +97,7 @@ smol_str = { workspace = true, optional = true }
 url = { version = "2.5.4", optional = true, default-features = false }
 uuid = { workspace = true, optional = true }
 rust_decimal = { workspace = true, optional = true }
+dashu-int = { workspace = true, optional = true }
 
 
 [dev-dependencies]

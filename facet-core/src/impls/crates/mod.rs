@@ -3,6 +3,7 @@ mod bytestring;
 mod camino;
 mod chrono;
 mod compact_str;
+mod dashu_int;
 mod indexmap;
 mod jiff;
 mod num_complex;
