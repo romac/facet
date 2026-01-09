@@ -7,6 +7,95 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.42.1](https://github.com/romac/facet/compare/facet-html-v0.42.0...facet-html-v0.42.1) - 2026-01-09
+
+### Fixed
+
+- *(html)* preserve whitespace-only text nodes in parser
+- *(html)* preserve whitespace in text content per HTML spec
+
+### Other
+
+- explain XML vs HTML data model differences
+- Add second ws preservation test
+- Add link for HTML because rustdoc is smart enough to warn us about it but not enough to just link it I guess.
+- Fails to preserve line breaks
+
+## [0.42.1](https://github.com/romac/facet/compare/facet-asn1-v0.42.0...facet-asn1-v0.42.1) - 2026-01-09
+
+### Added
+
+- *(format-suite)* implement net type tests for all formats
+
+## [0.42.1](https://github.com/romac/facet/compare/facet-shapelike-v0.42.0...facet-shapelike-v0.42.1) - 2026-01-09
+
+### Fixed
+
+- *(soundness)* make shape field private on Ox* types
+
+## [0.42.1](https://github.com/romac/facet/compare/facet-yaml-v0.42.0...facet-yaml-v0.42.1) - 2026-01-09
+
+### Added
+
+- *(format-suite)* implement net type tests for all formats
+
+## [0.42.1](https://github.com/romac/facet/compare/facet-toml-v0.42.0...facet-toml-v0.42.1) - 2026-01-09
+
+### Added
+
+- *(format-suite)* implement net type tests for all formats
+
+## [0.42.1](https://github.com/romac/facet/compare/facet-msgpack-v0.42.0...facet-msgpack-v0.42.1) - 2026-01-09
+
+### Added
+
+- *(format-suite)* implement net type tests for all formats
+
+## [0.42.1](https://github.com/romac/facet/compare/facet-kdl-v0.42.0...facet-kdl-v0.42.1) - 2026-01-09
+
+### Fixed
+
+- *(facet-kdl)* implement transparent document model for roundtripping
+
+## [0.43.0](https://github.com/romac/facet/compare/facet-args-v0.42.0...facet-args-v0.43.0) - 2026-01-09
+
+### Added
+
+- *(facet-args)* add counted flag support
+
+## [0.42.1](https://github.com/romac/facet/compare/facet-format-v0.42.0...facet-format-v0.42.1) - 2026-01-09
+
+### Fixed
+
+- *(facet-kdl)* implement transparent document model for roundtripping
+- accept all numeric scalar tags for numeric types
+- *(jit)* validate scalar tags before reading payload to prevent type confusion
+- *(html)* preserve whitespace-only text nodes in parser
+
+## [0.43.0](https://github.com/romac/facet/compare/facet-core-v0.42.0...facet-core-v0.43.0) - 2026-01-09
+
+### Added
+
+- *(shape)* add DeclId for identifying type declarations
+- *(facet-core)* add module_path to foreign type implementations
+- *(shape)* add module_path and source location fields
+
+### Fixed
+
+- *(variance)* &'a mut T is covariant in 'a when T is bivariant
+- prevent exponential variance computation for recursive types
+- *(soundness)* propagate variance correctly for reference types
+- resolve rustdoc links and clippy auto-deref warnings
+- *(soundness)* introduce TryFromOutcome enum for explicit ownership semantics
+- *(soundness)* return Invariant when variance depth limit is hit
+- *(soundness)* make shape field private on Ox* types
+
+### Other
+
+- *(decl_id)* auto-compute from module_path + kind + type_identifier
+- *(decl_id)* auto-compute for non-generic types
+- *(variance)* replace function-based variance with declarative model
+
 ## [0.42.0](https://github.com/facet-rs/facet/compare/facet-core-v0.41.0...facet-core-v0.42.0) - 2026-01-06
 
 ### Added
