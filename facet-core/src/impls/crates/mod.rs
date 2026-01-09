@@ -4,6 +4,7 @@ mod camino;
 mod chrono;
 mod compact_str;
 mod iddqd;
+mod dashu_int;
 mod indexmap;
 mod jiff;
 mod lock_api;
